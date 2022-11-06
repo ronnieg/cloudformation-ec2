@@ -12,7 +12,6 @@ Resources:
             Action:
               - 's3:Get*'
               - 's3:List*'
-              - 's3:PutObject'
             Resource: !GetAtt S3Bucket.Arn
 Outputs:
   BucketName:
