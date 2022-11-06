@@ -16,7 +16,7 @@ Resources:
             Resource: !GetAtt S3Bucket.Arn
 Outputs:
   BucketName:
-    Description: "Bucket to access"
+    Description: '{{ environment.inputs.description}}'
     Value: !GetAtt S3Bucket.Arn
   BucketAccessPolicyArn:
     Value: !Ref S3BucketAccessPolicy

@@ -1,0 +1,13 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  environment_input_type: "S3EnvironmentInput"
+  types:
+    S3EnvironmentInput:
+      type: object
+      description: "Input description for my environment"
+      properties:
+        description:
+          type: string
+          description: "Bucket to access"
+          default: "Bucket to access"
